@@ -24,13 +24,25 @@ The only other big decision for this project is whether or not to include the 10
 
 ## First Look
 
-Let's get down to it, which are better the *MotW* or the *mytharc* episodes.
-```
-> mean(subset(xfiles$rating,xfiles$motw=="Y"))
-[1] 7.8552
+The show's episodes have an average rating of 8.1/10, with the highest rated episode scoring a 9.4 and the lowest a 6.0. There are 125 *MotW*, which average a score of 7.8, and 76 *mytharc* episodes, . The average score of the *MotW* shows is 7.8, and the *mytharc*'s 8.5. 
 
-> mean(subset(xfiles$rating,xfiles$motw=="N"))
-[1] 8.475
+So the *mytharc* episodes are 0.4 points better than average and 0.6 better than the *MotW* episodes. 
+
 ```
+for(i in 2:max(xfiles$total_ep_num)){
+      if(xfiles$motw[i]=="Y"&&xfiles$motw[i-1]=="N"){
+          xfiles$chng[i]="Y->N"
+      } else if(xfiles$motw[i]=="N"&&xfiles$motw[i-1]=="Y"){
+          xfiles$chng[i]="N->Y"
+      } else if (xfiles$motw[i]=="N"&&xfiles$motw[i-1]=="N"){
+          xfiles$chng[i]="N->N"
+      } else xfiles$chng[i]="Y->Y"
+ }
+
+for(i in 2:max(xfiles$total_ep_num)){
+     xfiles$chng_val[i]<-(xfiles$rate[i]-xfiles$rate[i-1])
+}
+```
+
 
 
