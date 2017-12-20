@@ -20,13 +20,15 @@ To start our analysis of the two types of episodes, we must begin by discuss the
 
 In Excel I created a column titled '*MotW*' and classified each episode as 'Y' or 'N' to enter this information.
 
-The only other big decision for this project is whether or not to include the 10th season revival from 2016. With the series creator and executive producer Chris Carter back on the series along with some of the main writers and other staff <sup> [2] </sup> <sup> [3] </sup>. I was tempted to include the 10th season in my analysis, but I believe that still too much time has passed, and too much has changed from the original airing for it to be compared, and decided to leave it out.
+The only other big decision for this project is whether or not to include the 10th season revival from 2016. Though the series creator and executive producer Chris Carter back on the series along with some of the main writers and other staff <sup> [2] </sup> <sup> [3] </sup> I believe that too much time has passed, and too much has changed from the original airing for it to be compared, and decided to leave it out.
 
 ## First Look
 
-The show's episodes have an average rating of 8.1/10, with the highest rated episode scoring a 9.4 and the lowest a 6.0. There are 125 *MotW*, which average a score of 7.8, and 76 *mytharc* episodes, . The average score of the *MotW* shows is 7.8, and the *mytharc*'s 8.5. 
+The X-Files episodes average and median score is 8.1/10, with the highest and lowest rated episodes scoring 9.4 and 6.0 respectively. There are 125 *MotW* shows, which average a score of 7.8, and 76 *mytharc* episodes which average 8.5. So the *mytharc* episodes are a little above average, and the *MotW* episodea a little below.
 
-So the *mytharc* episodes are 0.4 points better than average and 0.6 better than the *MotW* episodes. 
+!rating_box](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rating_box.png)
+
+
 
 ```
 for(i in 2:max(xfiles$total_ep_num)){
