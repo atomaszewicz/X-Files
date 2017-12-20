@@ -16,19 +16,18 @@ Now bring in the Excel spreadsheet
 
 To start our analysis of the two types of episodes, we must begin by discuss their distinctions. 
 
-*Conspiracy* episodes, aka *mytharc*, are those that feature Mulder and Scully investigating the series-arcing government conspiracy about aliens, while *Monster of the Week* (*MotW*) episodes are one-off investigations of some paranormal or otherwise mysterious 'X-File'. Most episodes fit into one of these two distinct categories but sometimes government conspiracy  elements bleed into MotW episodes, and vice-versa. After straining my personal knowledge and memory of the show I decided to work with the classifications done by the phenomenal website http://www.insidethex.co.uk (they have transcribed every episode of the show by-hand!). Their method is to classify episodes as *mytharc* only if they directly feature elements of the government conspiracy <sup> [1] </sup>. 
+*Conspiracy* episodes, aka *mytharc*, are those that feature Mulder and Scully investigating the series-arcing government conspiracy about aliens, while *monster of the week* (*motw*) episodes are one-off investigations of some paranormal or otherwise mysterious 'X-File'. Most episodes fit into one of these two distinct categories but sometimes government conspiracy  elements bleed into MotW episodes, and vice-versa. After straining my personal knowledge and memory of the show I decided to work with the classifications done by the phenomenal website http://www.insidethex.co.uk (they have transcribed every episode of the show by-hand!). Their method is to classify episodes as *mytharc* only if they directly feature elements of the government conspiracy <sup> [1] </sup>. 
 
-In Excel I created a column titled '*MotW*' and classified each episode as 'Y' or 'N' to enter this information.
+In Excel I created a column titled '*motw*' and classified each episode as 'Y' or 'N' to enter this information.
 
 The only other big decision for this project is whether or not to include the 10th season revival from 2016. Though the series creator and executive producer Chris Carter back on the series along with some of the main writers and other staff <sup> [2] </sup> <sup> [3] </sup> I believe that too much time has passed, and too much has changed from the original airing for it to be compared, and decided to leave it out.
 
 ## First Look
 
-The X-Files episodes average and median score is 8.1/10, with the highest and lowest rated episodes scoring 9.4 and 6.0 respectively. There are 125 *MotW* shows, which average a score of 7.8, and 76 *mytharc* episodes which average 8.5. So the *mytharc* episodes are a little above average, and the *MotW* episodea a little below.
+The X-Files episodes average and median score is 8.1/10, with the highest and lowest rated episodes scoring 9.4 and 6.0 respectively. There are 125 *motw* shows, which average a score of 7.8, and 76 *mytharc* episodes which average 8.5. So the *mytharc* episodes are a little above average, and the *motw* episodes a little below.
 
 ![rating_box](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rating_box.png)
 
-mytharc 33 above 6 below
 
 
 
