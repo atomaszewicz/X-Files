@@ -28,6 +28,9 @@ The X-Files episodes average and median score is 8.1/10, with the highest and lo
 
 ![rating_box](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rating_box.png)
 
+mytharc 33 above 6 below
+
+
 
 
 ```
