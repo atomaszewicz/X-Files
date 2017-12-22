@@ -26,6 +26,8 @@ The only other big decision for this project is whether or not to include the 10
 
 The X-Files episodes average and median score is 8.1/10, with the highest and lowest rated episodes scoring 9.4 and 6.0 respectively. There are 125 *motw* shows, which average a score of 7.8, and 76 *mytharc* episodes which average 8.5. So the *mytharc* episodes are a little above average, and the *motw* episodes a little below.
 
+![rating_box_jitter](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rate_box_jitter.png)
+
 ![rating_box_jitter](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rate_boxplot_jitter.png)
 
 ![rating_box](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rating_box.png)
