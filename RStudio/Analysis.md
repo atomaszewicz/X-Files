@@ -34,7 +34,7 @@ As expected we see the majority of *motw* episodes below and *mytharc* episodes 
 ```
 #For each episode we check if it's motw status (Y/N) is the same or different from the last episode's
 #We indicate the type of change in a new column 'chng' (there are 4 types of changess: YY, YN, NY, NN)
-#Example: 'Y->N' episode x-1 was a motw, but the current episode x is not a motw episode
+#Example: 'Y->N' episode i-1 was a motw, but the current episode i is not a motw episode
 
 for(i in 2:max(xfiles$total_ep_num)){
       if(xfiles$motw[i]=="Y"&&xfiles$motw[i-1]=="N"){
@@ -45,7 +45,7 @@ for(i in 2:max(xfiles$total_ep_num)){
           xfiles$chng[i]="N->N"
       } else xfiles$chng[i]="Y->Y"
  }
-#We input the value of the difference between the previous episode rating and the current into a new column 'chng_val'
+#Into a new column 'chng_val' we input the value of the difference in rating between the last episode and the current one
 
 for(i in 2:max(xfiles$total_ep_num)){
      xfiles$chng_val[i]<-(xfiles$rate[i]-xfiles$rate[i-1])
