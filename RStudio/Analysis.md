@@ -28,11 +28,14 @@ The X-Files average and median episode score is 8.1/10, with the highest and low
 
 ![rate_box_jitter](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rate_box_jitter.png)
 
-
-
+As expected we see the majority of *motw* episodes below and *mytharc* episodes above the median. How do the ratings change when one shifts from a *motw* to a *mytharc* episode, or vice-versa?
 
 
 ```
+#For each episode we check if it's motw status (Y/N) is the same or different from the last episode's
+#We indicate the type of change in a new column 'chng' (there are 4 types of changess: YY, YN, NY, NN)
+#Example: 'Y->N' episode x-1 was a motw, but the current episode x is not a motw episode
+
 for(i in 2:max(xfiles$total_ep_num)){
       if(xfiles$motw[i]=="Y"&&xfiles$motw[i-1]=="N"){
           xfiles$chng[i]="Y->N"
@@ -42,6 +45,7 @@ for(i in 2:max(xfiles$total_ep_num)){
           xfiles$chng[i]="N->N"
       } else xfiles$chng[i]="Y->Y"
  }
+#We input the value of the difference between the previous episode rating and the current into a new column 'chng_val'
 
 for(i in 2:max(xfiles$total_ep_num)){
      xfiles$chng_val[i]<-(xfiles$rate[i]-xfiles$rate[i-1])
