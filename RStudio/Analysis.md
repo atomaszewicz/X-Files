@@ -28,6 +28,8 @@ The X-Files average and median episode score is 8.1/10, with the highest and low
 
 ![rate_box_jitter](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rate_box_jitter.png)
 
+## Seaons change...
+
 As expected we see the majority of *motw* episodes below and *mytharc* episodes above the median. How do the ratings change when one shifts from a *motw* to a *mytharc* episode, or vice-versa?
 
 
