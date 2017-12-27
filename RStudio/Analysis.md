@@ -39,11 +39,11 @@ As expected we see the majority of *motw* episodes below and *mytharc* episodes 
 #Example: 'Y->N' episode i-1 was a motw, but the current episode i is not a motw episode
 
 for(i in 2:max(xfiles$total_ep_num)){
-      if(xfiles$motw[i]=="Y"&&xfiles$motw[i-1]=="N"){
-          xfiles$chng[i]="Y->N"
-      } else if(xfiles$motw[i]=="N"&&xfiles$motw[i-1]=="Y"){
+      if(xfiles$motw[i-1]=="N"&&xfiles$motw[i]=="Y"){
           xfiles$chng[i]="N->Y"
-      } else if (xfiles$motw[i]=="N"&&xfiles$motw[i-1]=="N"){
+      } else if(xfiles$motw[i-1]=="Y"&&xfiles$motw[i]=="N"){
+          xfiles$chng[i]="Y->N"
+      } else if (xfiles$motw[i-1]=="N"&&xfiles$motw[i]=="N"){
           xfiles$chng[i]="N->N"
       } else xfiles$chng[i]="Y->Y"
  }
@@ -53,6 +53,17 @@ for(i in 2:max(xfiles$total_ep_num)){
      xfiles$chng_val[i]<-(xfiles$rate[i]-xfiles$rate[i-1])
 }
 ```
+
+In summary, we have created two new columns, one which logs whether the previous and current episodes are *motw* shows, and one with the difference in score between those two. For example: episode 2 is rated 8.3 and is **not** a *motw* episode, while episode 3 is rated 8.7 and **is** a *motw* episode, so the two columns read 'N->Y' and '0.4'. From now on we will drop the arrow and simply refer to these transitions with the two letters.
+
+The YN and NY transitions both occur 36 times, NN 39 times, and YY jump up at 89 times. Though there are 125 *motw* and 76 *mytharc*, it is still surprising how few NN occurances there are, but it shows that 50% of *mytharc* episodes sit between 2 *motw* episodes (we will come back to this later).
+
+Unsuprsingly the difference in score between episodes of the same type are very small, with both NN and YY having medians of 0, and averages of -0.09 and -0.04 respectively. It is interesting that they are both negative, but the difffernces aren't large enough to be significant. 
+
+The YN and NY sets align with our previously-learned facts, the *mytharc* shows are of higher quality than the *motw* ones. YN transitions (i.e. going from *motw* to *mytharc*) saw a notable up-tick, with both the median and average being positive (0.6 and 0.6 respecitvely) and likewise for the NY transfer's metrics being negative (-0.3 and -0.4 respecitvely).
+
+
+
 
 
 
