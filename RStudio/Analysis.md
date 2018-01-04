@@ -2,7 +2,7 @@
 
 ## Set-Up
 
-As in my previous projects I use IMDb's [user ratings of episodes](http://www.imdb.com/title/tt0106179/epdate?ref_=ttep_ql_3). I've scraped it into Excel, cleaned it up and now we bring it into RStudio to analyze. We begin in RStudio by loading some packages.
+As in my previous projects I use IMDb's [user ratings of episodes](http://www.imdb.com/title/tt0106179/epdate?ref_=ttep_ql_3). I've scraped this data into Excel, where I cleaned it up, and now we bring it into RStudio to analyze. We begin by loading some packages.
 
 ```
 install.packages("xlsx") 
@@ -14,7 +14,7 @@ Now bring in the Excel spreadsheet
 
 ```xfiles<-read.xlsx("x_files.xlsx",1)```
 
-To start our analysis of the two types of episodes, we must begin by discuss their distinctions. 
+To start our analysis of the two types of episodes, we must begin by discussing their distinctions. 
 
 *Conspiracy* episodes, aka *mytharc*, are those that feature Mulder and Scully investigating the series-arcing government conspiracy about aliens, while *monster of the week* (*motw*) episodes are one-off investigations of some paranormal or otherwise mysterious 'X-File'. Most episodes fit into one of these two distinct categories but sometimes government conspiracy  elements bleed into MotW episodes, and vice-versa. After straining my personal knowledge and memory of the show I decided to work with the classifications done by the phenomenal website http://www.insidethex.co.uk (they have transcribed every episode of the show by-hand!). Their method is to classify episodes as *mytharc* only if they directly feature elements of the government conspiracy <sup> [1] </sup>. 
 
@@ -60,9 +60,9 @@ Throughout the series the YN and NY transitions occur 36 times each, NN 39 times
 
 Unsuprsingly the difference in score between episodes of the same type are very small. Both NN and YY have a median difference of 0, and average difference of -0.09 and -0.04 respectively. It is interesting that they are both negative, but since we are adding many positive and negative values it is likely not significant (I won't investiagte this to keep my promise of this being a short project). 
 
-When the episode type changes, our previous result is reinforced: the *mytharc* shows are more liked than the *motw* ones. When going from *motw* to *mytharc* the score raises on average by 0.6 points, and going in the other direction the score drops a bit, by an average -0.4 points. 
+When the episode type changes, our previous result is reinforced: the *mytharc* shows are more popular than the *motw* ones. When going from *motw* to *mytharc* the score raises by an average 0.6 points, and going in the other direction the score drops a bit, by an average -0.4 points. 
 
- 
+ ## Year by Year
 
 
 
