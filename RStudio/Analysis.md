@@ -66,4 +66,4 @@ When the episode type changes, our previous result is reinforced: the *mytharc* 
 
 
 
-
+![season_avg_type](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/season_avg_type.png?raw=TRUE)
