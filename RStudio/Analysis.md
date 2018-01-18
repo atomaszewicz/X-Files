@@ -28,10 +28,14 @@ The X-Files average and median episode score is 8.1/10, with the highest and low
 
 ![rate_box_jitter](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rate_box_jitter.png)
 
-## Seaons change...
 
-As expected we see the majority of *motw* episodes below and *mytharc* episodes above the median. How do the ratings change when one shifts from a *motw* to a *mytharc* episode, or vice-versa?
+As expected we see the majority of *motw* episodes below and *mytharc* episodes above the median. 
 
+
+## A Little of Column A, a Little of Column B
+
+
+Next we want to look at how the ratings change when one shifts between episode types. To study this we have to add some columns to our dataframe. 
 
 ```
 #For each episode we check if it's motw status (Y/N) is the same or different from the last episode's
@@ -62,8 +66,8 @@ Unsuprsingly the difference in score between episodes of the same type are very 
 
 When the episode type changes, our previous result is reinforced: the *mytharc* shows are more popular than the *motw* ones. When going from *motw* to *mytharc* the score raises by an average 0.6 points, and going in the other direction the score drops a bit, by an average -0.4 points. 
 
- ## Year by Year
+## Seaons change...
 
-
+There is not a single season where the average *motw* episode score is higher than that of *mytharc*.
 
 ![season_avg_type](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/season_avg_type.png?raw=TRUE)
