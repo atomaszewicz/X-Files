@@ -68,6 +68,17 @@ When the episode type changes, our previous result is reinforced: the *mytharc* 
 
 ## Seaons change...
 
-There is not a single season where the average *motw* episode score is higher than that of *mytharc*.
+There is not a single season where the average *motw* show scores higher than the *mytharc* shows and two thirds of seasons have the former ranked more than half a point lower than the latter. Further the 9th season (the final season of the original run) has the lowest score for both episode types, and the *mytharc* score is 
 
 ![season_avg_type](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/season_avg_type.png?raw=TRUE)
+
+## Regions change...
+
+To end this off, there's one last thing I'd like to know: is my favoritism for the seasons filmed in Vancouver just a love of my own hometown or is there something to the Canadian episodes that make them better?
+
+As all my Vancouverites friends agree, the show seems to have lost something when it moved from filming in Vancouver to filming in L.A. Not only could we no longer play the 'where was this filmed?' game, but more importantly the misty, eerie, pine tree-y, man-vs-nature atmosphere of the Pacific Northwest was abandoned. Without getting too into this (I could really go all day), let's just acknowledge that when they brought the show back two years ago, they decided to film in Vancouver. 
+
+And wow, not by much, but I feel validated. 
+
+The Vancouver-filmed seasons 1-5 average a score of  8.12, while those filmed in La-La Land 8.04. 
+
