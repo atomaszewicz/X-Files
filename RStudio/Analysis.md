@@ -68,8 +68,9 @@ When the episode type changes, our previous result is reinforced: the *mytharc* 
 
 ## Seaons change...
 
-Much to my surprise there is not a single season that has average *mytharc* shows finishing behind average *motw* shows. Though I like the alien conspiracy episodes more in general, towards the end of the series they get a little disjointed, outlandish, and confusing (yes, even for a show about monsters and aliens). Two thirds of the seasons see the two episode types split by over 0.6 points, and in four of nine this split is over larger than standard deviation of the show's mean.
+Much to my surprise there is not a single season that has average *mytharc* shows finishing behind average *motw* shows. Though I like the alien conspiracy episodes more in general, towards the end of the series they get a little disjointed, outlandish, and confusing (yes, even for a show about monsters and aliens). Two thirds of the seasons see the two episode types split by over 0.6 points. 
 
+All but the final season's *mytharc* ratings are above the series average, while only two of the middle episodes season's *motw* 
 
 ![season_avg_type](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/season_avg_type.png?raw=TRUE)
 
