@@ -98,10 +98,12 @@ The Vancouver-filmed seasons average a score of 8.12, while those filmed in Los 
 
 # Plots
 
-rate_box<-ggplot(xfiles,aes(x=season_num,y=rating,group=season_num))+geom_boxplot()+geom_point(aes(col=motw))+scale_x_continuous(breaks=c(1,3,5,7,9))+scale_colour_discrete(name="Episode Type",labels=c("Mytharc","Monster of\n  the Week"))+xlab("Season Number")+ylab("IMDb Rating")+ggtitle("Monsters vs. Aliens",subtitle="The X-Files")
+## Rating Boxplot
 
+``rate_box<-ggplot(xfiles,aes(x=season_num,y=rating,group=season_num))+geom_boxplot()+geom_point(aes(col=motw))+scale_x_continuous(breaks=c(1,3,5,7,9))+scale_colour_discrete(name="Episode Type",labels=c("Mytharc","Monster of\n  the Week"))+xlab("Season Number")+ylab("IMDb Rating")+ggtitle("Monsters vs. Aliens",subtitle="The X-Files")``
 
-season_avg_type<-ggplot(season_avg,aes(x=season,y=value))+geom_bar(aes(fill=variable),stat="identity",position="dodge")+coord_cartesian(ylim=c(7,9))+xlab("Season Number")+ylab("IMDb Rating")+ggtitle("Battle of the Types",subtitle="X-Files Season Averages by Episode Type")+scale_x_continuous(breaks=c(1,3,5,7,9))+scale_fill_discrete(name="Episode Type")
+##Season Bar Chart
+``season_avg_type<-ggplot(season_avg,aes(x=season,y=value))+geom_bar(aes(fill=variable),stat="identity",position="dodge")+coord_cartesian(ylim=c(7,9))+xlab("Season Number")+ylab("IMDb Rating")+ggtitle("Battle of the Types",subtitle="X-Files Season Averages by Episode Type")+scale_x_continuous(breaks=c(1,3,5,7,9))+scale_fill_discrete(name="Episode Type")``
 
 
 
