@@ -18,22 +18,22 @@ To start our analysis, we must begin by discussing the two types of episodes.
 
 *Conspiracy* episodes, aka *mytharc*, are those that feature Mulder and Scully investigating the series-arcing government conspiracy about aliens. Then we have the *monster of the week* (*motw*) episodes which are one-off investigations of paranormal or otherwise mysterious events. Most episodes fit easily into one of the two categories but sometimes elements of one bleed into the other. After straining my personal knowledge and memory of the show, I decided to work with the classifications done by the phenomenal website http://www.insidethex.co.uk (they have transcribed every episode of the show by-hand!) <sup> [1] </sup>. 
 
-To keep track of the type I created a column titled '*motw*' and classified each episode as 'Y' or 'N'.
+To keep track of the type I created a column titled 'motw' and classified each episode with 'Y' or 'N'.
 
 The only other big decision for this project is whether or not to include the 10th season revival from 2016. Though the series creator and executive producer Chris Carter are back on the series, along with some of the main writers and other staff <sup> [2] </sup> <sup> [3] </sup, I believe that too much time has passed, and too much has changed for it to be a useful comparison. Thus I have decided to only use the original run of seasons 1-9 in my analysis.
 
 ## First Look
 
-The X-Files average and median episode score is 8.1/10 with a standard deviation of 0.7, with the highest and lowest rated episodes scoring 9.4 and 6.0 respectively. There are 125 *motw* shows, which average a score of 7.8, and 76 *mytharc* episodes which average 8.5. So the *mytharc* episodes are a little above average, and the *monster* episodes a little below. As the more formulaic and predicatble of the two, as well as over 60% of total episodes, it's no great suprise that the *motw* episodes finish below average
+The X-Files average and median episode score is 8.1/10 with a standard deviation of 0.7, with the highest and lowest rated episodes scoring 9.4 and 6.0 respectively. There are 125 *motw* shows, which average a score of 7.8, and 76 *mytharc* episodes which average 8.5. So the *mytharc* episodes are a little above average, and the *monster* episodes a little below. As the more formulaic and predicatble of the two, and seen by some as filler, it's no great suprise that the *motw* episodes finish below average.
 
 ![rate_box_jitter](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/rate_box_jitter.png)
 
 
 ## Seasons change...
 
-Much to my surprise there is not a single season that has average *mytharc* shows finishing behind average *motw* shows. Though I like the alien conspiracy episodes more in general, towards the end of the series they get a little disjointed, outlandish, and confusing (yes, even for a show about monsters and aliens). This difference isn't nominal either, two thirds of the seasons see the two episode types ratings split by over 0.6 points.
+Not a single season has average *mytharc* shows finishing behind average *motw* shows. Though I like the alien conspiracy episodes more in general, towards the end of the series they get a little disjointed, outlandish, and confusing (yes, even for a show about monsters and aliens). This difference isn't nominal either, two thirds of the seasons see the two episode types ratings split by over 0.6 points.
 
-All but the final season's *mytharc* ratings are above the series' average score of 8.1, and only two of the middle season's *motw* scores are above this average.
+All but the final season's *mytharc* ratings are above the series' average score of 8.1, and only two season's *motw* scores are above this average.
 
 ![season_avg_type](https://raw.githubusercontent.com/atomaszewicz/X-Files/master/RStudio/Plots/season_avg_type.png?raw=TRUE)
 
@@ -66,7 +66,7 @@ for(i in 2:max(xfiles$total_ep_num)){
 
 In summary, we have created two new columns, one which logs whether the previous and current episodes are *motw* shows, and one with the difference in score between those two. For example: episode 2 is rated 8.3 and is **not** a *motw* episode, while episode 3 is rated 8.7 and **is** a *motw* episode, so the two columns read 'N->Y' and '0.4'. From now on we will drop the arrow and simply refer to these transitions with the two letters (in our example 'NY').
 
-Throughout the series the YN and NY transitions occur 36 times each, NN 39 times, and YY 89 times. Though there are 125 *motw* and 76 *mytharc*, it is still surprising how few NN occurances there are, but it shows that 50% of *mytharc* episodes are sandwiched between two *motw* episodes (we will come back to this later).
+Throughout the series the YN and NY transitions occur 36 times each, NN 39 times, and YY 89 times. Though there are 125 *motw* and 76 *mytharc*, where over 50% of *mytharc* episodes are sandwiched between two *motw* episodes.
 
 Unsuprsingly the difference in score between episodes of the same type are very small. Both NN and YY have a median difference of 0, and average difference of -0.09 and -0.04 respectively. It is interesting that they are both negative, but since we are adding many positive and negative values it is likely not significant (I won't investiagte this to keep my promise of this being a short project). 
 
@@ -75,11 +75,12 @@ When the episode type changes, our previous result is reinforced: the *mytharc* 
 
 ## Regions change...
 
-To end this off, there's one last thing I'd like to know: is my favoritism for the seasons filmed in Vancouver just a love of my own hometown or is there something to the Canadian episodes that make them better?
+There's one last thing I'd like to know: is my favoritism for the seasons filmed in Vancouver just a love of my own hometown or is there something to the Canadian episodes that make them better?
 
-As all my Vancouverite friends agree, the show seems to have lost something when it moved from filming in Vancouver to filming in LA. Not only could we no longer play the 'where was this filmed?' game, but more importantly the misty, eerie, pine-tree laden man-vs-nature atmosphere of the Pacific Northwest was gone. It was likely no mistake that when they brought the show back two years ago, they decided to film it in Vancouver. 
+As all my Vancouverite friends agree, the show seems to have lost something when it moved from filming in Vancouver to filming in LA between season 5 and 6. Not only could we no longer play the 'where was this filmed?' game, but more importantly the misty, eerie, pine-tree laden man-vs-nature atmosphere of the Pacific Northwest was gone. It was likely no mistake that when they brought the show back two years ago, they decided to film it in Vancouver. 
 
-The Vancouver-filmed seasons 1-5 average a score of  8.12, while those filmed in La-La Land 8.04, which we can compare to the series mean (to 3 significant figures) of 8.09, with a standard deviation of 0.68. So although in this brief study it doesn't look like a very significant result, it does 
+The Vancouver-filmed seasons average a score of 8.12, while those filmed in Los Angeles get an 8.04. Comparing this to the series mean  of 8.09 and standard deviation of 0.68, it doesn't look like a very significant result, but it has validated my feelings.  
+
 
 # Footnotes
 
@@ -94,3 +95,14 @@ The Vancouver-filmed seasons 1-5 average a score of  8.12, while those filmed in
 <sup> [3] </sup>
 
 "When queried about the writers and producers that could join his team, Carter confirms that Glen Morgan will be coming back in a productorial position. 'We've lured Darin Morgan and Jim Wong, we're very excited about that and we're working on the rest.' He adds. Hopefully we can get a confirmation on Frank Spotnitz soon enough." https://web.archive.org/web/20160125142527/http://www.xfiles.news/index.php/news/latest-news/85-xfn-exclusive-chris-carter-on-xfilesrevival
+
+# Plots
+
+rate_box<-ggplot(xfiles,aes(x=season_num,y=rating,group=season_num))+geom_boxplot()+geom_point(aes(col=motw))+scale_x_continuous(breaks=c(1,3,5,7,9))+scale_colour_discrete(name="Episode Type",labels=c("Mytharc","Monster of\n  the Week"))+xlab("Season Number")+ylab("IMDb Rating")+ggtitle("Monsters vs. Aliens",subtitle="The X-Files")
+
+
+season_avg_type<-ggplot(season_avg,aes(x=season,y=value))+geom_bar(aes(fill=variable),stat="identity",position="dodge")+coord_cartesian(ylim=c(7,9))+xlab("Season Number")+ylab("IMDb Rating")+ggtitle("Battle of the Types",subtitle="X-Files Season Averages by Episode Type")+scale_x_continuous(breaks=c(1,3,5,7,9))+scale_fill_discrete(name="Episode Type")
+
+
+
+
