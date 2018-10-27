@@ -20,7 +20,7 @@ To start our analysis, we must begin by discussing the two types of episodes.
 
 To keep track of the type I created a column titled 'motw' and classified each episode with 'Y' or 'N'.
 
-The only other big decision for this project is whether or not to include the 10th season revival from 2016. Though the series creator and executive producer Chris Carter are back on the series, along with some of the main writers and other staff <sup> [2] </sup> <sup> [3] </sup, I believe that too much time has passed, and too much has changed for it to be a useful comparison. Thus I have decided to only use the original run of seasons 1-9 in my analysis.
+The only other big decision for this project is whether or not to include the 10th season revival from 2016. Though the series creator and executive producer Chris Carter are back on the series, along with some of the main writers and other staff <sup> [2] </sup> <sup> [3] </sup>, I believe that too much time has passed, and too much has changed for it to be a useful comparison. Thus I have decided to only use the original run of seasons 1-9 in my analysis.
 
 ## First Look
 
